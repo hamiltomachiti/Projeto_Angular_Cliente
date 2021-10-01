@@ -10,14 +10,19 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { ClienteListaComponent } from './clientes/cliente-lista/cliente-lista.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ClienteInserirComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    ClienteListaComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,8 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
